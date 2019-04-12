@@ -226,6 +226,7 @@ describe("Dockerfile LSP Tests", function() {
 		});
 		lspProcess.on("message", (json) => {
 			if (json.method === "workspace/applyEdit") {
+				console.log('json', json);
 				assert.equal(json.params.edit.documentChanges.length, 1);
 				finished();
 			}
