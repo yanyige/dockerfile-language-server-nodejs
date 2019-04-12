@@ -4,7 +4,6 @@ import {
   Position, Range,
 	TextDocumentSyncKind, MarkupKind, SymbolKind, InsertTextFormat, CompletionItemKind, CodeActionKind, DiagnosticSeverity, FoldingRangeKind, DocumentHighlightKind
 } from 'vscode-languageserver';
-import { uriToFilePath } from 'vscode-languageserver/lib/files';
 import { CommandIds } from 'dockerfile-language-service';
 import { ValidationCode } from 'dockerfile-utils';
 
